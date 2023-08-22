@@ -1,0 +1,58 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto-encabezado{
+    margin: 3% 0 1% 0;
+    text-align: center;
+    h1{
+        font-size: 50px;
+    }
+    h5{
+        font-size: 30px;
+    }
+}
+
+.cards{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+ion-card{
+  width: 100%;
+  max-width: 350px; /* Limitar el ancho máximo de las tarjetas */
+  --background: var(--ion-color-light);
+  margin: 1% 1%; /* Margen pequeño para separar las tarjetas */
+  color: var(--ion-background-color);
+  ion-card-title{
+    color: var(--ion-background-color);
+  }
+}
+
+ion-card-content{
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para centrar las ion-card en las ion-col */
+ion-row.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ion-col.cards-col {
+  display: flex;
+  justify-content: center;
+  padding: 1%; /* Añadir un pequeño espacio entre las tarjetas */
+}
+
+ion-button {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+ion-button:hover {
+  --background: var(--ion-background-color);
+  color: var(--ion-color-medium);
+}
