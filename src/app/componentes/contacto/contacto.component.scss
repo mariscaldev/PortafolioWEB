@@ -1,0 +1,14 @@
+.contenedor{
+    font-family: 'poppins', sans-serif;
+    padding: 0 6%;
+    color: var(--ion-color-light);
+    background: var(--ion-color-oscuro);
+    min-height: calc(100vh);
+
+    h1{
+        text-align: center;
+        span {
+            color: var(--ion-color-rojo);
+        }
+    }
+}

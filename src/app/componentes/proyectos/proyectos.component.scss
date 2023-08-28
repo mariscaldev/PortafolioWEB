@@ -1,0 +1,64 @@
+.contenedor{
+    font-family: 'poppins', sans-serif;
+    padding: 0 6%;
+    background: var(--ion-color-light);
+    min-height: calc(100vh);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: var(--ion-color-oscuro);
+    span{
+        color: var(--ion-color-rojo);
+        font-weight: 750;
+    }
+}
+.card {
+    background: var(--ion-color-light);
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative; /* Agrega posición relativa para que la tarjeta sea el contenedor relativo */
+  }
+  
+  .card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.861);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; /* Oculta inicialmente */
+    transition: opacity 0.5s ease; /* Agrega la transición */
+    backdrop-filter: blur(5px); /* Añade efecto de desenfoque al fondo */
+  }
+  
+  .card:hover .card-hover {
+    opacity: 1; /* Muestra con la transición */
+  }
+  
+  .card-title,
+  .card-text {
+    margin: 3% 4%;
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 50px;
+  }
+
+  .card-text {
+    font-size: 30px;
+  }
+  
+  /* Asegúrate de agregar las dimensiones adecuadas a las imágenes */
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  

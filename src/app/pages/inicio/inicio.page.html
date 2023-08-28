@@ -1,4 +1,23 @@
-<ion-content [fullscreen]="true">
-  <h1>PÁGINA EN CREACIÓN</h1>
-  <div class="avatar"><app-footer></app-footer></div>
-</ion-content>
+<app-navbar></app-navbar>
+<ion-content [fullscreen]="true"
+  ><br id="inicio" />
+  <div>
+    <app-presentacion></app-presentacion>
+  </div>
+  <div>
+    <br id="sobreMi" />
+    <app-sobre-mi></app-sobre-mi>
+    <!-- Aquí puedes agregar información sobre tus proyectos -->
+  </div>
+  <div>
+    <br id="proyectos" />
+    <app-proyectos></app-proyectos>
+    <!-- Aquí puedes agregar información sobre tus proyectos -->
+  </div>
+  <div>
+    <br id="contacto" />
+    <app-contacto></app-contacto>
+    <!-- Aquí puedes agregar información sobre tus proyectos -->
+  </div></ion-content
+>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
