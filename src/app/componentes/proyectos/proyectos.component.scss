@@ -16,49 +16,84 @@ h2 {
     }
 }
 .card {
-    background: var(--ion-color-light);
-    margin: 10px 0;
-    overflow: hidden;
-    position: relative; /* Agrega posición relativa para que la tarjeta sea el contenedor relativo */
-  }
-  
-  .card-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.861);
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    opacity: 0; /* Oculta inicialmente */
-    transition: opacity 0.5s ease; /* Agrega la transición */
-    backdrop-filter: blur(5px); /* Añade efecto de desenfoque al fondo */
-  }
-  
-  .card:hover .card-hover {
-    opacity: 1; /* Muestra con la transición */
-  }
-  
-  .card-title,
-  .card-text {
-    margin: 3% 4%;
-    padding: 0.5rem;
-  }
+  background: var(--ion-color-light);
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative; /* Agrega posición relativa para que la tarjeta sea el contenedor relativo */
+}
 
+.card-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.861);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0; /* Oculta inicialmente */
+  transition: opacity 0.5s ease; /* Agrega la transición */
+  backdrop-filter: blur(5px); /* Añade efecto de desenfoque al fondo */
+}
+
+.card:hover .card-hover {
+  opacity: 1; /* Muestra con la transición */
+}
+
+.card-title,
+.card-text {
+  margin: 3% 4%;
+  padding: 0.5rem;
+}
+
+.card-title {
+  font-size: 50px;
+}
+
+.card-text {
+  font-size: 30px;
+}
+
+/* Asegúrate de agregar las dimensiones adecuadas a las imágenes */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/** Customización para los ion-buttons **/
+
+ion-button{
+width: 100px;
+margin: 0 10px;
+  a {
+    text-decoration: none;
+    color: var(--ion-color-rojo);
+  }
+}
+
+@media only screen and (max-width: 540px) {
   .card-title {
-    font-size: 50px;
+    font-size: 35px;
   }
 
   .card-text {
-    font-size: 30px;
+    font-size: 20px;
   }
-  
-  /* Asegúrate de agregar las dimensiones adecuadas a las imágenes */
-  .card-img-top {
-    width: 100%;
-    height: auto;
+}
+
+@media only screen and (max-width: 300px) {
+  .card-title {
+    font-size: 20px;
   }
-  
+
+  .card-text {
+    font-size: 10px;
+  }
+
+  ion-button{
+    width: 90px;
+    margin: 0 10px;
+    }
+}
