@@ -11,4 +11,58 @@
             color: var(--ion-color-rojo);
         }
     }
+
+    /* Establecer el fondo del componente y el color del texto */
+ion-content {
+  background-color: #00000d;
+  color: #fff;
+}
+
+/* Estilizar el formulario */
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  /* Estilo de las casillas de entrada */
+  ion-item {
+    background-color: #080822; /* Un tono más claro */
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilo para los elementos en línea (Nombre y Apellido, Correo electrónico y Teléfono) */
+  .inline-inputs {
+    display: flex;
+    justify-content: space-between;
+
+    ion-item {
+      width: calc(50% - 5px);
+    }
+  }
+
+  /* Estilo para el botón de enviar */
+  ion-button[type="submit"] {
+    background-color: #00a1ff;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  /* Estilo para el botón de limpiar */
+  ion-button[type="button"] {
+    background-color: #ff0000;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  /* Estilo para el campo de mensaje */
+  ion-textarea {
+    background-color: #080822; /* Un tono más claro */
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+}
+
 }

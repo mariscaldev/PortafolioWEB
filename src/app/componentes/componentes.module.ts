@@ -7,6 +7,7 @@ import { PresentacionComponent } from './presentacion/presentacion.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { ContactoComponent } from './contacto/contacto.component';
   ],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    FormsModule,  // Agrega esto
+    ReactiveFormsModule, // Y esto
   ],
   exports: [
     NavbarComponent,

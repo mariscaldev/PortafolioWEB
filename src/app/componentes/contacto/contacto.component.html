@@ -1,6 +1,29 @@
 <div class="contenedor">
   <br /><br />
   <div>
-    <h1><span>'Contacto' </span>En Construcción</h1>
-  </div>
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+      <ion-item>
+        <ion-label position="stacked">Nombre *</ion-label>
+        <ion-input formControlName="nombre" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Apellido</ion-label>
+        <ion-input formControlName="apellido"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Correo Electrónico *</ion-label>
+        <ion-input type="email" formControlName="email" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Mensaje *</ion-label>
+        <ion-textarea formControlName="mensaje" required></ion-textarea>
+      </ion-item>
+      
+      <ion-button expand="full" type="submit" [disabled]="!contactForm.valid">Enviar</ion-button>
+      <ion-button expand="full" type="button" (click)="resetForm()">Limpiar</ion-button>
+    </form>
+      </div>
 </div>
